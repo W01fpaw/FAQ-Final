@@ -6,7 +6,7 @@
 
         <div class="title m-b-md">
 
-            {{ strtoupper ($message) }} only page!
+            Welcome this is the {{ strtoupper ($message) }} only page!
 
         </div>
     </div>
