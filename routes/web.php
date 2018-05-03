@@ -39,9 +39,23 @@ Route::resources([
 ]);
 
 
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
+{
 
+    Route::match(['get', 'post'], '/adminOnlyPage/', 'HomeController@admin');
 
+});
 
+Route::group(['middleware' => 'App\Http\Middleware\SuperAdminMiddleware'], function()
+{
 
+    Route::match(['get', 'post'], '/superAdminOnlyPage/', 'HomeController@super_admin');
 
+});
 
+Route::group(['middleware' => 'App\Http\Middleware\MemberMiddleware'], function()
+{
+
+    Route::match(['get', 'post'], '/memberOnlyPage/', 'HomeController@member');
+
+});
