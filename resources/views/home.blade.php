@@ -54,4 +54,18 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Dashboard
+            </div>
+            <div class="panel-body">
+                You are logged in! as <strong>{{ strtoupper(Auth::user()->type) }}</strong>
+            </div>
+            Admin Page: <a href="{{url('/')}}/adminOnlyPage">{{url('/')}}/adminOnlyPage</a><br/>
+            Super Admin Page: <a href="{{url('/')}}/superAdminOnlyPage">{{url('/')}}/super_adminOnlyPage</a><br/>
+            Member Page: <a href="{{url('/')}}/memberOnlyPage">{{url('/')}}/memberOnlyPage</a><br/>
+        </div>
+    </div>
 @endsection
