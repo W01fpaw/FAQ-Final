@@ -2,10 +2,13 @@
 
 @section('content')
 
-    <div class="title m-b-md">
+    <div class="container">
 
-        {{ strtoupper ($message) }} only page!
+        <div class="title m-b-md">
 
+            {{ strtoupper ($message) }} only page!
+
+        </div>
     </div>
 
 @endsection

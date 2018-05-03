@@ -2,10 +2,12 @@
 
 @section('content')
 
-    <div class="title m-b-md">
+    <div class="container">
+        <div class="title m-b-md">
 
-        You cannot access this page! This is for only '{{$role}}!
+            You cannot access this page! This is for only '{{$role}}!
 
+        </div>
     </div>
 
 @endsection
