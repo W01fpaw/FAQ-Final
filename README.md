@@ -1,3 +1,25 @@
+## Description
+
+This access control feature allows a user to select a role when registering on the website. This role is then used to determine what content pages that user is able to access.
+
+As an example the page of the website you are redirected to after registering has a label of your current role and a list of three web page links. These links are restricted to one role each. If you click the page that is the same as your role you will get a "Welcome!". If you click a page that is not your role you will get "You do not have authorization to view this page!".
+
+# Epic
+
+As a company, we need access controls for the FAQ section of our website so that our users of varying roles can access the content that is only relevant to their role.
+
+## User Stories
+
+1. As a user, I need a role selection option during site registration in order to link the proper role to my ID.
+
+2. As a member, I need to be able to access the views pages for questions and answers in order to ask, answer, and view questions and answers.
+
+3. As a super admin, I need a page to review and moderate questions and answers in order to keep discussions on track and remove offensive comments.
+
+4. As an admin, I need a page restricted to admin role only in order to manage the site and modify other user roles.
+
+### All text below this line is originally cloned from the professors code that was used as a base for this project.
+
 # Introduction to the FAQ Project at NJIT
 
 This project is to create a website + Chabot that work with slack and eventually other chat platforms.  The idea is to make a virtual teaching assistant that can help manage questions that I receive.   Once the basic system works I want to add features that turn answering questions into a game that students earn points for. 
